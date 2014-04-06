@@ -1,0 +1,22 @@
+{
+	"name": "vMReal/SteamWebAPI",
+	"description": "PHP module with Valve Web Steam Api. Dota2, user info, steam info and other. (Plugins for Symfony, Yii and others).",
+	"keywords": ["Steam", "api", "dota2", "dota2 API", "yii", "Symfony"],
+	"homepage": "https://github.com/vMReal/SteamWebAPI",
+	"type": "php extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Victor Bondarenko",
+			"email": "mreal.victor@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"vMReal\\steamWebApi\\": ""
+		}
+	}
+}
