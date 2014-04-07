@@ -5,7 +5,7 @@
  * Time: 6:16 AM
  */
 
-namespace vMReal\SteamWebAPI\service;
+namespace vMReal\steamWebApi\service;
 
 use vMReal\SteamWebAPI\methods\dota2Match\MatchDetails;
 use vMReal\SteamWebAPI\methods\dota2Match\MatchHistory;

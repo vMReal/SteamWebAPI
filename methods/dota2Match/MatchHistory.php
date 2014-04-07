@@ -5,10 +5,10 @@
  * Time: 7:49 PM
  */
 
-namespace vMReal\SteamWebAPI\methods\dota2Match;
+namespace vMReal\steamWebApi\methods\dota2Match;
 
-use vMReal\SteamWebAPI\interfaces\MultiFormatsInterface;
-use vMReal\SteamWebAPI\methods\Method;
+use vMReal\steamWebApi\interfaces\MultiFormatsInterface;
+use vMReal\steamWebApi\methods\Method;
 
 class MatchHistory extends Method implements MultiFormatsInterface
 {

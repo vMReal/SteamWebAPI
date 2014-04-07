@@ -5,7 +5,7 @@
  * Time: 4:30 PM
  */
 
-namespace vMReal\SteamWebAPI\interfaces;
+namespace vMReal\steamWebApi\interfaces;
 
 
 interface MediatorInterface {

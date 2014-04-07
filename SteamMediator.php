@@ -7,8 +7,8 @@
 
 namespace vMReal\SteamWebAPI;
 
-use vMReal\SteamWebAPI\interfaces\MediatorInterface;
-use vMReal\SteamWebAPI\interfaces\TrackingInterface;
+use vMReal\steamWebApi\interfaces\MediatorInterface;
+use vMReal\steamWebApi\interfaces\TrackingInterface;
 
 class SteamMediator implements MediatorInterface
 {

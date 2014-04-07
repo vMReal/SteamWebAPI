@@ -5,12 +5,12 @@
  * Time: 4:57 AM
  */
 
-namespace vMReal\SteamWebAPI;
+namespace vMReal\steamWebApi;
 
 
-use vMReal\SteamWebAPI\interfaces\TrackingInterface;
-use vMReal\SteamWebAPI\service\Dota2;
-use vMReal\SteamWebAPI\service\Dota2Match;
+use vMReal\steamWebApi\interfaces\TrackingInterface;
+use vMReal\steamWebApi\service\Dota2;
+use vMReal\steamWebApi\service\Dota2Match;
 
 class SteamWebAPI implements TrackingInterface
 {

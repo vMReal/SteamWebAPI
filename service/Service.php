@@ -5,9 +5,9 @@
  * Time: 6:18 AM
  */
 
-namespace vMReal\SteamWebAPI\service;
+namespace vMReal\steamWebApi\service;
 
-use vMReal\SteamWebAPI\interfaces\MediatorInterface;
+use vMReal\steamWebApi\interfaces\MediatorInterface;
 
 abstract class Service
 {

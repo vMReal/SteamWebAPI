@@ -6,7 +6,7 @@
  * Time: 5:04 AM
  */
 
-namespace vMReal\SteamWebAPI\methods\dota2Match;
+namespace vMReal\steamWebApi\methods\dota2Match;
 
 
 use vMReal\SteamWebAPI\interfaces\MultiFormatsInterface;

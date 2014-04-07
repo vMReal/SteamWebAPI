@@ -5,7 +5,6 @@
 	"homepage": "https://github.com/vMReal/SteamWebAPI",
 	"type": "php extension",
 	"license": "MIT",
-	"minimum-stability": "dev",
 	"authors": [
 		{
 			"name": "Victor Bondarenko",

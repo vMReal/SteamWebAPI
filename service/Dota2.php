@@ -5,7 +5,7 @@
  * Time: 6:16 AM
  */
 
-namespace vMReal\SteamWebAPI\service;
+namespace vMReal\steamWebApi\service;
 
 class Dota2 extends Service
 {

@@ -5,10 +5,10 @@
  * Time: 7:09 PM
  */
 
-namespace vMReal\SteamWebAPI\methods;
+namespace vMReal\steamWebApi\methods;
 
 
-use vMReal\SteamWebAPI\interfaces\MediatorInterface;
+use vMReal\steamWebApi\interfaces\MediatorInterface;
 
 abstract class Method
 {

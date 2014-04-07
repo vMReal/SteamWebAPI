@@ -15,7 +15,7 @@ class UserTest extends \PHPUnit_Framework_TestCase {
 
 	public function testOlo() {
 
-		/*$config = [
+		$config = [
 			'devKey'=> 'dfdf',
 			'language'=> 'en_us',
 			'host'=> 'http://api.steampowered.com',

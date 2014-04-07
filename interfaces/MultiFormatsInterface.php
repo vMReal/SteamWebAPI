@@ -5,7 +5,7 @@
  * Time: 6:30 AM
  */
 
-namespace vMReal\SteamWebAPI\interfaces;
+namespace vMReal\steamWebApi\interfaces;
 
 
 interface MultiFormatsInterface
