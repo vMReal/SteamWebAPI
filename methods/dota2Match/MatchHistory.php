@@ -7,10 +7,10 @@
 
 namespace vMReal\steamWebApi\methods\dota2Match;
 
-use vMReal\steamWebApi\interfaces\MultiFormatsInterface;
+
 use vMReal\steamWebApi\methods\Method;
 
-class MatchHistory extends Method implements MultiFormatsInterface
+class MatchHistory extends Method
 {
 
 	/**

@@ -8,11 +8,10 @@
 namespace vMReal\steamWebApi;
 
 
-use vMReal\steamWebApi\interfaces\TrackingInterface;
 use vMReal\steamWebApi\service\Dota2;
 use vMReal\steamWebApi\service\Dota2Match;
 
-class SteamWebAPI implements TrackingInterface
+class SteamWebApi
 {
 
 	private $config = [
@@ -20,10 +19,7 @@ class SteamWebAPI implements TrackingInterface
 		'language'=> 'en_us',
 		'host'=> 'http://api.steampowered.com',
 	];
-
-	private $httpCode;
-	private $bodyResponse;
-	private $totalTime;
+	private $logger;
 
 
 
@@ -31,6 +27,8 @@ class SteamWebAPI implements TrackingInterface
 		$this->setConfig($config);
 		if (empty($this->config['devKey']))
 			throw new \Exception('You must specify devKey in config!');
+
+		$this->logger = new Logger();
 	}
 
 
@@ -54,33 +52,7 @@ class SteamWebAPI implements TrackingInterface
 	}
 
 
-
-	public function setHttpCode($httpCode) {
-		$this->httpCode = $httpCode;
-	}
-
-
-	public function setTotalTime($time) {
-		$this->totalTime = $time;
-	}
-
-
-	public function setResponse($bodyResponse) {
-		$this->bodyResponse = $bodyResponse;
-	}
-
-
-	public function getLastHttpCode() {
-		return $this->httpCode;
-	}
-
-
-	public function getLastResponse() {
-		return $this->bodyResponse;
-	}
-
-
-	public function getLastTotalTime() {
-		return $this->totalTime;
+	public function getLogger() {
+		return $this->logger;
 	}
 } 

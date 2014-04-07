@@ -7,9 +7,9 @@
 
 namespace vMReal\steamWebApi\service;
 
-use vMReal\SteamWebAPI\methods\dota2Match\MatchDetails;
-use vMReal\SteamWebAPI\methods\dota2Match\MatchHistory;
-use vMReal\SteamWebAPI\methods\dota2Match\TournamentPlayerStats;
+use vMReal\steamWebApi\methods\dota2Match\MatchDetails;
+use vMReal\steamWebApi\methods\dota2Match\MatchHistory;
+use vMReal\steamWebApi\methods\dota2Match\TournamentPlayerStats;
 
 class Dota2Match extends Service
 {

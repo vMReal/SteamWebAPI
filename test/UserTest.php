@@ -6,10 +6,10 @@
  * Time: 6:23 AM
  */
 
-namespace vMReal\SteamWebAPI\test;
+namespace vMReal\steamWebApi\test;
 
-use vMReal\SteamWebAPI\SteamWebAPI;
-use vMReal\SteamWebAPI\SteamMediator;
+use vMReal\steamWebApi\SteamWebAPI;
+use vMReal\steamWebApi\SteamMediator;
 
 class UserTest extends \PHPUnit_Framework_TestCase {
 

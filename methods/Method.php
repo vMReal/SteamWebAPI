@@ -53,17 +53,17 @@ abstract class Method
 		return $this->getMediator()->get($this->params);
 	}
 
-	public function inJSON() {
+	public function inJson() {
 		return $this->getData(self::IN_JSON);
 	}
 
 
-	public function inXML() {
+	public function inXml() {
 		return $this->getData(self::IN_XML);
 	}
 
 
-	public function inVDF() {
+	public function inVdf() {
 		return $this->getData(self::IN_VDF);
 	}
 

@@ -10,23 +10,4 @@ namespace vMReal\steamWebApi\service;
 class Dota2 extends Service
 {
 
-	private $typeService = 570;
-
-	protected function getServiceName() {
-		return 'IDOTA2';
-	}
-
-
-	public function getTypeService() {
-		return $this->typeService;
-	}
-
-
-	public function setTypeService($typeId) {
-		$this->typeService = $typeId;
-	}
-
-
-	public function GetMatchHistory() {
-	}
 } 

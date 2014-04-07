@@ -9,10 +9,9 @@
 namespace vMReal\steamWebApi\methods\dota2Match;
 
 
-use vMReal\steamWebApi\interfaces\MultiFormatsInterface;
 use vMReal\steamWebApi\methods\Method;
 
-class MatchDetails extends Method implements MultiFormatsInterface
+class MatchDetails extends Method
 {
 
 	/**

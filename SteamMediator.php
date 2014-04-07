@@ -5,14 +5,14 @@
  * Time: 6:29 AM
  */
 
-namespace vMReal\SteamWebAPI;
+namespace vMReal\steamWebApi;
 
 use vMReal\steamWebApi\interfaces\MediatorInterface;
-use vMReal\steamWebApi\interfaces\TrackingInterface;
+use vMReal\steamWebApi\interfaces\CollectorResponseInterface;
 
 class SteamMediator implements MediatorInterface
 {
-	private $tracking;
+	private $collector;
 	private $host;
 	private $service;
 	private $typeService;
@@ -22,8 +22,8 @@ class SteamMediator implements MediatorInterface
 	private $params = [];
 
 
-	public function __construct(TrackingInterface $tracking, $config) {
-		$this->tracking = $tracking;
+	public function __construct(CollectorResponseInterface $collector, $config) {
+		$this->collector = $collector;
 
 		if (empty($config['devKey']))
 			throw new Exception('You must specify devKey in config!');
@@ -45,9 +45,7 @@ class SteamMediator implements MediatorInterface
 	public function get($params) {
 		$this->setParams($params);
 		$data = $this->getData($this->getlink(), false);
-		$this->tracking->setHttpCode($data->httpCode);
-		$this->tracking->setTotalTime($data->totalTime);
-		$this->tracking->setResponse($data->body);
+		$this->collector->setInformation($data->httpCode, $data->totalTime);
 		return ($data->httpCode == 200)? $data->body : NULL;
 	}
 

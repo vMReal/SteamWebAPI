@@ -9,10 +9,9 @@
 namespace vMReal\steamWebApi\methods\dota2Match;
 
 
-use vMReal\SteamWebAPI\interfaces\MultiFormatsInterface;
 use vMReal\SteamWebAPI\methods\Method;
 
-class TournamentPlayerStats extends Method implements MultiFormatsInterface
+class TournamentPlayerStats extends Method
 {
 
 	/**
