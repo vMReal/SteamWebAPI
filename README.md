@@ -5,7 +5,7 @@ PHP module with Valve Web Steam Api. Dota2, user info, steam info and other.  (P
 
 
 
- #Installation
+ # Installation #
 
 
  Add the following to `require` section of your `composer.json`:
@@ -30,7 +30,7 @@ PHP module with Valve Web Steam Api. Dota2, user info, steam info and other.  (P
  
  
 
- #Usage
+ # Usage #
 
 
  ```php
