@@ -1,12 +1,12 @@
-SteamWebAPI
+#SteamWebAPI#
 ===========
 
 PHP module with Valve Web Steam Api. Dota2, user info, steam info and other.  (Plugins for Symfony, Yii and others). 
 
 
 
- Installation
- ------------
+ #Installation#
+
 
  Add the following to `require` section of your `composer.json`:
 
@@ -27,9 +27,11 @@ PHP module with Valve Web Steam Api. Dota2, user info, steam info and other.  (P
  
 
  Then do `composer install`.
+ 
+ 
 
- Usage
- -----
+ #Usage#
+
 
  ```php
  use vMReal\steamWebApi\SteamWebAPI;
