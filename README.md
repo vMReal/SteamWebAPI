@@ -36,12 +36,12 @@ Usage
 
 
  ```php
- use vMReal\steamWebApi\SteamWebAPI;
+ use vMReal\steamWebApi\SteamWebApi;
  
- $api = new SteamWebAPI(['devKey'=> 'key xxxxx']);
+ $api = new SteamWebApi(['devKey'=> 'key xxxxx']);
  
- $api->getDota2Match()->getMatchHistory()->byAccountId(67679224)->inJSON();
+ $api->getDota2Match()->getMatchHistory()->byAccountId(67679224)->inJson();
  
- $api->getDota2Match()->getMatchDetails()->byMatchId(496934798)->inXML();
+ $api->getDota2Match()->getMatchDetails()->byMatchId(496934798)->inXml();
  
  ```
