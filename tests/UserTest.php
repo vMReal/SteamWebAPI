@@ -6,7 +6,7 @@
  * Time: 6:23 AM
  */
 
-namespace vMReal\steamWebApi\test;
+namespace vMReal\steamWebApi\tests;
 
 use vMReal\steamWebApi\SteamWebAPI;
 use vMReal\steamWebApi\SteamMediator;
@@ -15,6 +15,7 @@ class UserTest extends \PHPUnit_Framework_TestCase {
 
 	public function testOlo() {
 
+		/*echo '111111111111111';
 		$config = [
 			'devKey'=> 'dfdf',
 			'language'=> 'en_us',

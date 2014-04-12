@@ -13,7 +13,32 @@ use vMReal\steamWebApi\interfaces\CollectorResponseInterface;
 class Logger implements CollectorResponseInterface
 {
 
-	public function setInformation($httpCode, $totalTime) {
+	public $responseResults = [];
 
+	public function setInformation($httpCode, $totalTime) {
+		$this->responseResults[] = (object) array(
+			'httpCode'=> $httpCode,
+			'totalTime'=> $totalTime,
+		);
+	}
+
+
+	/**
+	 * Returns last  http code at request
+	 * @return int
+	 */
+	public function getLastHttpCode() {
+		$count = count($this->responseResults);
+		return $count? $this->responseResults[$count-1]->httpCode : 0;
+	}
+
+
+	/**
+	 * Returns last total time at request
+	 * @return float
+	 */
+	public function getLastTotalTime() {
+		$count = count($this->responseResults);
+		return $count? $this->responseResults[$count-1]->totalTime : 0;
 	}
 } 

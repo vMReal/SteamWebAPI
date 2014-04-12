@@ -13,6 +13,7 @@ interface CollectorResponseInterface {
 	/**
 	 * Set info from obtained response an api
 	 * @param $httpCode int
+	 * @param $totalTime float
 	 */
 	public function setInformation($httpCode, $totalTime);
 

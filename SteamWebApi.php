@@ -39,7 +39,7 @@ class SteamWebApi
 
 
 	protected function getMediator() {
-		return new SteamMediator($this, $this->config);
+		return new SteamMediator($this->logger, $this->config);
 	}
 
 
