@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="PhpUnit" load_method="PHPUNIT_PHAR" bootstrap_file_path="$PROJECT_DIR$/../../autoload.php" configuration_file_path="E:/wamp/bin/php/php5.4.16/phpunit.phar" custom_loader_path="" phpunit_phar_path="E:/wamp/bin/php/php5.4.16/phpunit.phar" use_bootstrap_file="true" />
-</project>
-
