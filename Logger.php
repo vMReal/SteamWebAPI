@@ -49,6 +49,6 @@ class Logger implements CollectorResponseInterface
 	 */
 	public function getLastError() {
 		$count = count($this->responseResults);
-		return $count? $this->responseResults[$count-1]->error : 0;
+		return $count? $this->responseResults[$count-1]->error : '';
 	}
 } 
