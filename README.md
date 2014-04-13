@@ -98,3 +98,7 @@ In return you will receive json object that contains a list of matches filtered 
 
 
 ### List of available categories and methods.
+
+#### Methods relating to Dota 2. `->getDota2()` 
+- `->getRarities()` [study](docs/dota2/rarities.md "Detailed documentation") Dota 2 item rarity list.
+- `->getHeroes()` [study](docs/dota2/heroes.md "Detailed documentation") A list of heroes within Dota 2. 
