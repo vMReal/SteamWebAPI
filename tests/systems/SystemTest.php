@@ -13,10 +13,12 @@ use vMReal\steamWebApi\SteamWebApi;
 abstract class SystemTest extends \PHPUnit_Framework_TestCase
 {
 	private  $api;
+	private $showFullContent;
 
 	public function __construct() {
 		$config = require(__DIR__ . '/../../config-test.php');
 		$this->api = new SteamWebApi($config);
+		$this->showFullContent = empty($config['showFullContent']) ? false : true;
 	}
 
 
@@ -29,7 +31,12 @@ abstract class SystemTest extends \PHPUnit_Framework_TestCase
 		$totalTime = $this->getApi()->getLogger()->getLastTotalTime();
 
 		echo("====================================== $title =================================== \r\n \r\n");
-		var_dump($content);
+
+		if ($this->showFullContent)
+			echo $content;
+		else
+			var_dump($content);
+
 		echo("\r\n -------- total time: $totalTime s \r\n \r\n \r\n");
 	}
 } 

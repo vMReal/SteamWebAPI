@@ -44,7 +44,7 @@ class SteamWebApi
 
 
 	public function getDota2($type = 570) {
-		return new Dota2($this->getMediator(), 'IDOTA2', $type);
+		return new Dota2($this->getMediator(), 'IEconDOTA2', $type);
 	}
 
 
