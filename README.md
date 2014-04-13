@@ -99,7 +99,7 @@ In return you will receive json object that contains a list of matches filtered 
 
 ### List of available categories and methods:
 
-#### Methods relating to Dota 2. `->getDota2Match()`
+#### Methods relating to Dota 2 matches. `->getDota2Match()`
 - `->getMatchHistory()` [study](docs/dota2Match/matchHistory.md "Detailed documentation") A list of matches, filterable by various parameters.
 - `->getMatchDetails()` [study](docs/dota2Match/matchDetails.md "Detailed documentation") Information about a particular match.
 - `->getMatchHistoryBySequenceNum()` [study](docs/dota2Match/matchHistoryBySequenceNum.md "Detailed documentation") A list of matches ordered by their sequence num.
@@ -107,7 +107,7 @@ In return you will receive json object that contains a list of matches filtered 
 - `->getLiveLeagueGames()` [study](docs/dota2Match/liveLeagueGames.md "Detailed documentation") A list of in-progress league matches, as well as details of that match as it unfolds.
 - `->getScheduledLeagueGames()` [study](docs/dota2Match/scheduledLeagueGames.md "Detailed documentation") A list of scheduled league games coming up.
 - `->getTeamInfo()` [study](docs/dota2Match/teamInfo.md "Detailed documentation") A list of all the teams set up in-game.
-- `->getTournamentPlayerStats()` [study](docs/dota2Match/tournamentPlayerStats.md "Detailed documentation") Stats about a particular player within a tournament. .
+- `->getTournamentPlayerStats()` [study](docs/dota2Match/tournamentPlayerStats.md "Detailed documentation") Stats about a particular player within a tournament.
 
 #### Methods relating to Dota 2. `->getDota2()`
 - `->getRarities()` [study](docs/dota2/rarities.md "Detailed documentation") Dota 2 item rarity list.
