@@ -15,10 +15,11 @@ class Logger implements CollectorResponseInterface
 
 	public $responseResults = [];
 
-	public function setInformation($httpCode, $totalTime) {
+	public function setInformation($httpCode, $totalTime, $error) {
 		$this->responseResults[] = (object) array(
 			'httpCode'=> $httpCode,
 			'totalTime'=> $totalTime,
+			'error'=> $error,
 		);
 	}
 
@@ -40,5 +41,14 @@ class Logger implements CollectorResponseInterface
 	public function getLastTotalTime() {
 		$count = count($this->responseResults);
 		return $count? $this->responseResults[$count-1]->totalTime : 0;
+	}
+
+	/**
+	 * Returns last error at request
+	 * @return str
+	 */
+	public function getLastError() {
+		$count = count($this->responseResults);
+		return $count? $this->responseResults[$count-1]->error : 0;
 	}
 } 

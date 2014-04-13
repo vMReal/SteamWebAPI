@@ -29,6 +29,8 @@ abstract class SystemTest extends \PHPUnit_Framework_TestCase
 
 	public function showContentResponse($title, $content) {
 		$totalTime = $this->getApi()->getLogger()->getLastTotalTime();
+		$httpCode =  $this->getApi()->getLogger()->getLastHttpCode();
+		$error = $this->getApi()->getLogger()->getLastError();
 
 		echo("====================================== $title =================================== \r\n \r\n");
 
@@ -37,6 +39,8 @@ abstract class SystemTest extends \PHPUnit_Framework_TestCase
 		else
 			var_dump($content);
 
-		echo("\r\n -------- total time: $totalTime s \r\n \r\n \r\n");
+		echo("\r\n-------- Http code: $httpCode \r\n");
+		echo("-------- Error: $error \r\n");
+		echo("-------- Total time: $totalTime s \r\n \r\n \r\n");
 	}
 } 

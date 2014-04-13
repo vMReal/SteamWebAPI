@@ -26,13 +26,13 @@ class SteamMediator implements MediatorInterface
 		$this->collector = $collector;
 
 		if (empty($config['devKey']))
-			throw new Exception('You must specify devKey in config!');
+			throw new \Exception('You must specify devKey in config!');
 
 		if (empty($config['host']))
-			throw new Exception('You must specify host in config!');
+			throw new \Exception('You must specify host in config!');
 
 		if (empty($config['language']))
-			throw new Exception('You must specify language in config!');
+			throw new \Exception('You must specify language in config!');
 
 		$this->host = $config['host'];
 		$this->setParams([
@@ -45,8 +45,8 @@ class SteamMediator implements MediatorInterface
 	public function get($params) {
 		$this->setParams($params);
 		$data = $this->getData($this->getlink(), false);
-		$this->collector->setInformation($data->httpCode, $data->totalTime);
-		return ($data->httpCode == 200)? $data->body : NULL;
+		$this->collector->setInformation($data->httpCode, $data->totalTime, $data->error);
+		return ($data->httpCode == 200 && !$data->error)? $data->body : NULL;
 	}
 
 
@@ -88,7 +88,28 @@ class SteamMediator implements MediatorInterface
 		$data->httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 		$data->totalTime = curl_getinfo($ch, CURLINFO_TOTAL_TIME);
 		curl_close($ch);
+
+		$data->error = $this->getError($data->body);
 		return $data;
+	}
+
+
+	private function getError($data) {
+		switch ($this->params['format']) {
+			case 'json':
+				$object = json_decode($data);
+				return isset($object->result->error)? $object->result->error : '';
+				break;
+
+			case 'xml':
+				$xml = new \SimpleXMLElement($data);
+				return isset($xml->error)? $xml->error : '';
+				break;
+
+			case 'vdf':
+				return '';
+				break;
+		}
 	}
 
 

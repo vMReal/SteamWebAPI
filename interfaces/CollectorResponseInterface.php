@@ -14,7 +14,8 @@ interface CollectorResponseInterface {
 	 * Set info from obtained response an api
 	 * @param $httpCode int
 	 * @param $totalTime float
+	 * @param $error str
 	 */
-	public function setInformation($httpCode, $totalTime);
+	public function setInformation($httpCode, $totalTime, $error);
 
 }

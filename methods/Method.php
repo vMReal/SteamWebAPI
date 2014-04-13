@@ -63,12 +63,12 @@ abstract class Method
 	}
 
 
-	public function inVdf() {
+	/*public function inVdf() {
 		return $this->getData(self::IN_VDF);
-	}
+	}*/
 
 
 	public function inArray() {
-		return json_decode($this->inJSON());
+		return json_decode($this->inJson());
 	}
 } 
