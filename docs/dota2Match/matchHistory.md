@@ -1,3 +1,7 @@
+# GetMatchHistory
+
+A list of matches, filterable by various parameters. 
+
 ## Examples
 
 ```
